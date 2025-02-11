@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Car Dealership</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <!-- Header content will be added with JS -->
+    <div id="header-placeholder"></div>
+
+    <!-- The breadcrumb -->
+    <p class="breadcrumb">
+        <a href="index.html">Home</a> > <span>Shop</span>
+    </p>
+
+    <main>
+        <div class="container">
+
+            <!-- Shop Car Filters Section -->
+            <div class="shop-filters">
+                <h2 class="head-title">Filters</h2>
+                <form id="shop-filters-form">
+                    <label for="mark">Mark:</label> 
+                    <div class="select-wrapper">
+                        <select name="mark" id="mark"> <span><i class="fa-sharp fa-solid fa-chevron-down"></i></span>
+                            <option value="all">All</option>
+                            <option value="honda">Honda</option>
+                            <option value="ferrari">Ferrari</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="audi">Audi</option>
+                            <option value="tesla">Tesla</option>
+                        </select>
+                        <span class="icon-arrow-down">
+                            <img src="photos/icon _chevron bottom_.png" alt="Arrow Down" />
+                        </span>
+                    </div>
+
+                    <div class="inline-filters">
+                        <div class="price-filters">
+                            <label for="price-min">Price Range:</label>
+                            <select name="price-min" id="price-min">
+                                <option value="min">Min</option>
+                                <option value="10,000">$10,000</option>
+                                <option value="50,000">$50,000</option>
+                                <option value="100,000">$100,000</option>
+                                <option value="150,000">$150,000</option>
+                            </select>
+                        </div>
+                        <div class="price-filters">
+                            <label for="price-max">Price Range:</label>
+                            <select name="price-max" id="price-max">
+                                <option value="max">Max</option>
+                                <option value="50,000">$50,000</option>
+                                <option value="100,000">$100,000</option>
+                                <option value="200,000">$200,000</option>
+                                <option value="500,000">$500,000</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Cars Array will be added dynamically here -->
+            <div class="cars">
+                <h2 class="head-title">Cars</h2>
+                <ul id="cars-list"></ul>
+            </div>
+
+            <!-- Cart Section -->
+            <div class="cart">
+                <h2 class="head-title">Cart</h2>
+                <ul id="cart-items"></ul>
+                <div class="cart-bottom">
+                    <hr />
+                    <div class="cart-total">
+                        <p id="total-price-container">Total: <span id="total-price"> 0.00 </span>$</p>
+                    </div>
+                    <div class="cart-buttons">
+                        <button id="sell">Sell</button>
+                        <button id="cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add New Car Section -->
+            <div class="add-car">
+                <h2 class="head-title">Add Car</h2>
+                <form id="add-car-form">
+                    <label for="car-mark">Mark:</label>
+                    <input type="text" name="mark" id="car-mark" placeholder="Mark name..." />
+                
+                    <label for="car-model">Model</label>
+                    <input type="text" name="model" id="car-model" placeholder="Model name..." />
+            
+                    <div class="inline-inputs">
+                        <div class="input-group">
+                            <label for="car-price">Price</label>
+                            <input type="number" name="price" id="car-price" placeholder="ex. 24000" />
+                        </div>
+                        <div class="input-group">
+                            <label for="car-image-url">Image url</label>
+                            <input type="url" name="image-url" id="car-image-url" placeholder="url here..." />
+                        </div>
+                    </div>
+                    <input type="submit" value="Add Vehicle" class="submit-btn">
+                </form>
+            </div>
+        </div>
+
+        <!-- Payment Modal - It will pop up after the "sell" button is clicked -->
+        <div id="payment" class="modal">
+            <div class="payment-content">
+                <h2 class="head-title">Payment</h2>
+                <hr />
+                <form id="payment-form">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" name="card-number" id="card-number" placeholder="1234 5678 9101 1121" />
+                
+                    <div class="exp-cvc">
+                        <div class="exp-cvc-group">
+                            <label for="expiration-date">Expiration Date</label>
+                            <input type="text" name="expiration-date" id="expiration-date" placeholder="MM/YY" />
+                        </div>
+                        <div class="exp-cvc-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" name="cvv" id="cvv" placeholder="123" />
+                        </div>
+                    </div>
+                    <button id="pay"> Pay
+                        <span id="total-price-display">$0.00</span> 
+                    </button>
+                </form>
+                <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
+            </div>
+        </div>
+
+        <!-- Success Message Modal - It will pop up after the "pay" button is clicked -->
+        <div id="success-message" class="modal">
+            <div class="message-content">
+                <h2>Order has been paid successfully</h2>
+                <span class="icon-container"> 
+                    <img src="photos/Rectangle 40.png" alt="Rectangle" id="rectangle" /> 
+                    <img src="photos/icon _check_.png" alt="Check icon" id="check-icon" />
+                </span>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- Footer content will be added with JS-->
+    <div id="footer-placeholder"></div>
+    
+    <script src="template.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>

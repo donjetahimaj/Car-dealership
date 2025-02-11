@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Young+Serif&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!--The header content will be added with JS-->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="background-image"></div>
+            <div class="hero-main">
+                <div class="hero-text">
+                    <h2>Find Your Dream</h2>
+                <div class="title-line">
+                    <h1>CAR</h1>
+                    <button class="hero-btn">
+                        <a href="shop.html">Order Now <img src="photos/arrow-right.png" alt="Arrow Right" />
+                        </a>
+                    </button>
+                </div>
+                </div>
+                <div class="hero-image">
+                    <img src="photos/Car-PNG-Photos 1.png" alt="Red Car Image" />
+                </div>
+                <div class="slider">
+                    <span class="circle active"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                </div>
+                <div class="nav-arrows-container">
+                    <div class="nav-arrows">
+                        <img src="photos/Frame 39480.png" alt="Nav Arrows" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Cars Section -->
+        <section class="filter-cars">
+            <div class="filter">
+                <div class="filter-group">
+                    <label for="new/used">New/Used <img src="photos/arrow-down.png" alt="Arrow Down" class="filter-img" /></label>
+                    <select name="new/used" id="new/used">
+                        <option value="new/used">New/Used</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="make">Make <img src="photos/arrow-down.png" alt="Arrow Down" class="filter-img" /></label>
+                    <select name="make" id="make">
+                        <option value="">INFINITI</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="model">Model <img src="photos/arrow-down.png" alt="Arrow Down" class="filter-img" /></label>
+                    <select name="model" id="model">
+                        <option value="allmodels">All Models</option>
+                    </select>
+                </div>
+                    <img src="photos/Frame 39410 (1).png" alt="Search" id="search-img" />
+            </div>
+        </section>
+
+        <!-- Brands Section -->
+        <section id="brands">
+            <div class="title-header">
+                <div class="line"></div>
+                <h2 class="title">Brands</h2>
+                <div class="line"></div>
+            </div>
+            <div class="mark-images">
+                <img src="photos/Component 5.png" alt="Honda Logo" />
+                <img src="photos/Component 2.png" alt="Ferrari Logo" />
+                <img src="photos/Component 3.png" alt="Toyota Logo" />
+                <img src="photos/Component 4.png" alt="Audi Logo" />
+                <img src="photos/Component 5.png" alt="Honda Logo" />
+                <img src="photos/Component 1.png" alt="Tesla Logo" />
+            </div>
+        </section>
+
+        <!-- Explore Cars Section -->
+        <section id="explore">
+            <div class="title-header">
+                <div class="line"></div>
+                <h2 class="title">Explore</h2>
+                <div class="line"></div>
+            </div>
+            <div class="explore-buttons">
+                <button class="red-btn">Cars & Minivan</button>
+                <button class="btn">Trucks</button>
+                <button class="btn">Crossovers & SUVs</button>
+                <button class="btn">Electrified</button>
+            </div>
+            <div class="cars">
+                <div class="car-card">
+                    <h4 class="car-title">Tesla Model X</h4>
+                    <p class="car-subtitle">New</p>
+                    <div class="car-details">
+                        <div class="photo-container">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/2020-tesla-model-x-123-656e3825810bc.jpg?crop=0.479xw:0.433xh;0.261xw,0.297xh&resize=1200:*" alt="Tesla Model X" class="car-image" />
+                        </div>
+                        <div class="car-info">
+                            <ul class="car-info-list">
+                                <li class="info">Model Year: <span>2024</span></li>
+                                <li class="info">Model: <span>LC76</span></li>
+                                <li class="info">Fuel: <span>Electric</span></li>
+                            </ul>
+                            <p class="car-price">$81,630</p>
+                            <button class="order-btn"> Order Now
+                                <img src="photos/arrow-right-12.png" alt="Arrow Right" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <h4 class="car-title">Ferrari Roma</h4>
+                    <p class="car-subtitle">New</p>
+                    <div class="car-details">
+                        <div class="photo-container">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/ferrari-roma-spider-2-64137a910bf1c.jpg?crop=0.660xw:0.489xh;0.171xw,0.278xh&resize=1200:*" alt="Ferrari Roma" class="car-image" />
+                        </div>
+                        <div class="car-info">
+                            <ul class="car-info-list">
+                                <li class="info">Model Year: <span>2024</span></li>
+                                <li class="info">Model: <span>F169</span></li>
+                                <li class="info">Fuel: <span>Petrol</span></li>
+                            </ul>
+                            <p class="car-price">$247,308</p>
+                            <button class="order-btn"> Order Now
+                                <img src="photos/arrow-right-12.png" alt="Arrow Right" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <h4 class="car-title">Tesla Model S</h4>
+                    <p class="car-subtitle">New</p>
+                    <div class="car-details">
+                        <div class="photo-container">
+                            <img src="https://media.ed.edmunds-media.com/tesla/model-s/2024/oem/2024_tesla_model-s_sedan_plaid_fq_oem_1_1280x855.jpg" alt="Tesla Model S" class="car-image" />
+                        </div>
+                        <div class="car-info">
+                            <ul class="car-info-list">
+                                <li class="info">Model Year: <span>2024</span></li>
+                                <li class="info">Model: <span>LC76</span></li>
+                                <li class="info">Fuel: <span>Electric</span></li>
+                            </ul>
+                            <p class="car-price">$76,830</p>
+                            <button class="order-btn"> Order Now
+                                <img src="photos/arrow-right-12.png" alt="Arrow Right" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <h4 class="car-title">Honda Civic</h4>
+                    <p class="car-subtitle">New</p>
+                    <div class="car-details">
+                        <div class="photo-container">
+                            <img src="https://media.ed.edmunds-media.com/honda/civic/2023/oem/2023_honda_civic_4dr-hatchback_sport-touring_fq_oem_1_815.jpg" alt="Honda Civic" class="car-image" />
+                        </div>
+                        <div class="car-info">
+                            <ul class="car-info-list">
+                                <li class="info">Model Year: <span>2024</span></li>
+                                <li class="info">Model: <span>Hatchback</span></li>
+                                <li class="info">Fuel: <span>Petrol</span></li>
+                            </ul>
+                            <p class="car-price">$26,045</p>
+                            <button class="order-btn">
+                                Order Now
+                                <img src="photos/arrow-right-12.png" alt="Arrow Right" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us">
+            <div class="title-header">
+                <div class="line"></div>
+                <h2 class="title">About Us</h2>
+                <div class="line"></div>
+            </div>
+                <p class="subtitle">Discover The Passion Behind Our Website.</p>
+                <p class="description">At MakerMinds Vehicle, We Are Dedicated To Providing You With The Finest Selection Of Quality Vehicles. Our Team Of Experts Is Passionate About Cars And Committed To Ensuring Your Satisfaction. With Years Of Experience In The Automotive Industry, We Strive To Exceed Your Expectations Every Time You Step Into Our Showroom.</p>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video">
+            <div class="title-header">
+                <div class="line"></div>
+                <h2 class="title">Video Showcase</h2>
+                <div class="line"></div>
+            </div>
+            <div class="video-container">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/yh0ZGHiizSA?si=HzDSQbYL_AnXnFZq" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact-us">
+            <div class="title-header">
+                <div class="line"></div>
+                <h2 class="title">Contact Us</h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-us-content">
+                <img src="photos/image.png" alt="Grey Cars" />
+                <form id="contact-form">
+                    <div class="form-info">
+                        <input type="text" name="name" id="name" placeholder="Name..." />
+                        <input type="email" name="email" id="email" placeholder="Email..." />
+                        <input type="text" name="subject" id="subject" placeholder="Subject" />
+                        <textarea name="message" id="message" placeholder="Message..." rows="4" cols="50"></textarea>
+                    </div>
+                    <div class="submit-button">
+                        <input type="submit" value="Send Email" id="send-email" />
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer content will be added with JS -->
+    <div id="footer-placeholder"></div>
+
+
+    <script src="template.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
